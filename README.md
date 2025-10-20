@@ -120,6 +120,7 @@ This project demonstrates:
     <li>Swagger documentation automation</li>
     <li>Dependency injection and testing with Jest</li>
 </ul>
+
 ---
 
 ## ⭐ If you like this project, consider giving it a star on GitHub, it helps others discover learning-friendly NestJS examples!
