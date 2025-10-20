@@ -39,7 +39,7 @@ Clone and install dependencies:
 git clone https://github.com/<your-username>/notes-api.git
 cd notes-api
 yarn install
-
+```
 ---
 
 ## ⚙️ Running the App
@@ -47,12 +47,12 @@ yarn install
 # Development mode (auto-reloads)
 ```bash
 yarn start:dev
-
+```
 # Production build
 ```bash
 yarn build
 yarn start:prod
-
+```
 ---
 
 ## 🌱 Seeding Sample Data
@@ -61,7 +61,7 @@ You can prefill the database with example notes:
 
 ```bash
 yarn seed
-
+```
 This will insert two demo notes:
 “Welcome” — first seeded note ✨
 “Second” — edit or delete it in Thunder Client!
@@ -84,13 +84,13 @@ This will insert two demo notes:
 
 ```bash
 yarn test
-
+```
 You’ll find example tests under src/notes/notes.service.spec.ts.
 
 ---
 
 ## 🧩 Project Structure
-
+```bash
 src
 ├── app.module.ts             # Root module
 ├── main.ts                   # Entry point + Swagger setup
@@ -100,18 +100,19 @@ src
     ├── notes.controller.ts
     ├── notes.module.ts
     └── notes.service.ts
-
+```
 ---
 
 ## 🧠 Learning Objectives
 
 This project demonstrates:
-- Clean modular design in NestJS
-- DTO + validation + transformation flow
-- Database persistence with TypeORM
-- Swagger documentation automation
-- Dependency injection and testing with Jest
-
+<ul>
+    <li>Clean modular design in NestJS</li>
+    <li>DTO + validation + transformation flow</li>
+    <li>Database persistence with TypeORM</li>
+    <li>Swagger documentation automation</li>
+    <li>Dependency injection and testing with Jest</li>
+</ul>
 ---
 
-## ⭐ If you like this project, consider giving it a star on GitHub — it helps others discover learning-friendly NestJS examples!
+## ⭐ If you like this project, consider giving it a star on GitHub, it helps others discover learning-friendly NestJS examples!
