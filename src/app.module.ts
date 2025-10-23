@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm'; // Connecting SQLite via TypeORM
 import { NotesModule } from './notes/notes.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -12,5 +14,7 @@ import { NotesModule } from './notes/notes.module';
     }),
     NotesModule,
   ],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
