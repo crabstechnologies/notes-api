@@ -1,25 +1,31 @@
-import { Column, Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from "typeorm";
-import { ApiProperty } from "@nestjs/swagger";
+import {
+  Column,
+  Entity,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
+import { ApiProperty } from '@nestjs/swagger';
 
 @Entity()
 export class Note {
-    @ApiProperty()
-    @PrimaryGeneratedColumn()
-    id: number;
-    
-    @ApiProperty()
-    @Column({ length: 500 })
-    title: string;
-    
-    @ApiProperty()
-    @Column('text')
-    content: string;
+  @ApiProperty()
+  @PrimaryGeneratedColumn()
+  id: number;
 
-    @ApiProperty()
-    @CreateDateColumn()
-    createdAt: Date;
+  @ApiProperty()
+  @Column({ length: 100 })
+  title: string;
 
-    @ApiProperty()
-    @UpdateDateColumn()
-    updatedAt: Date;
+  @ApiProperty()
+  @Column({ type: 'varchar', length: 2000 })
+  content: string;
+
+  @ApiProperty()
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @ApiProperty()
+  @UpdateDateColumn()
+  updatedAt: Date;
 }
