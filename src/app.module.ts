@@ -10,7 +10,6 @@ const shouldSynchronize =
     ? true
     : rawSynchronizeEnv.toLowerCase() === 'true';
 
-
 @Module({
   imports: [
     TypeOrmModule.forRoot({

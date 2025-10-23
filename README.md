@@ -3,7 +3,7 @@
 ![TypeORM](https://img.shields.io/badge/TypeORM-FF6C37?style=for-the-badge&logo=typeorm&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # 🧠 Notes API — NestJS + TypeORM + SQLite
 
@@ -139,3 +139,9 @@ This project demonstrates:
 ---
 
 ## ⭐ If you like this project, consider giving it a star on GitHub, it helps others discover learning-friendly NestJS examples!
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
