@@ -60,6 +60,21 @@ yarn start:dev
 yarn build
 yarn start:prod
 ```
+### Database schema sync (TypeORM)
+
+TypeORM's automatic schema sync is controlled via the `TYPEORM_SYNC` environment
+variable:
+
+```bash
+# .env (local development)
+TYPEORM_SYNC=true
+```
+
+For production deployments the flag **must** be set to `false` to protect data
+migrations. The provided `yarn start:prod` script already enforces this by
+running `TYPEORM_SYNC=false node dist/main`. If you use a different process
+manager, make sure to export the variable yourself (for Windows PowerShell use
+`$env:TYPEORM_SYNC = 'false'`).
 ---
 
 ## 🌱 Seeding Sample Data
